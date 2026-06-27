@@ -1,13 +1,14 @@
 📘 Trading Signal Backend — Spring Boot + PostgreSQL
 
-i) A production‑grade backend service for managing crypto trading signals with:
-ii) Live price integration (Binance Public API)
-iii) Dynamic signal evaluation (TARGET / STOPLOSS / EXPIRED)
-iv) ROI calculation
-v) Scheduled background updates
-vi) PostgreSQL persistence
-vii) Swagger API documentation
-viii) Full unit test coverage
+A production‑grade backend service for managing crypto trading signals with:
+
+i) Live price integration (Binance Public API)
+ii) Dynamic signal evaluation (TARGET / STOPLOSS / EXPIRED)
+iii) ROI calculation
+iv) Scheduled background updates
+v) PostgreSQL persistence
+vi) Swagger API documentation
+vii) Full unit test coverage
 
 🚀 1. Setup Instructions
 Prerequisites
