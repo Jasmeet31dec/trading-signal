@@ -64,12 +64,14 @@ Once the application is running, open:
 http://localhost:8081/swagger-ui/index.html
 
 ##Available Endpoints
-Method	      Endpoint	                     Description
-POST	    /api/signals	                 Create a new trading signal
-GET	      /api/signals	                 Get all signals
-GET	      /api/signals/{id}	             Get signal by ID
-GET	      /api/signals/{id}/status	     Evaluate & return updated status
-DELETE	  /api/signals/{id}	             Delete a signal
+| HTTP Method | Route                     | Purpose                                      |
+|-------------|---------------------------|----------------------------------------------|
+| POST        | /api/signals              | Create a new trading signal                  |
+| GET         | /api/signals              | Retrieve all trading signals                 |
+| GET         | /api/signals/{id}         | Retrieve a specific signal by ID             |
+| GET         | /api/signals/{id}/status  | Evaluate and return the current status       |
+| DELETE      | /api/signals/{id}         | Delete a specific signal                     |
+
 
 🧠 4. Architecture Overview
 This project follows a clean, layered architecture:
