@@ -3,11 +3,17 @@
 A production‑grade backend service for managing crypto trading signals with:
 
 i) Live price integration (Binance Public API)
+
 ii) Dynamic signal evaluation (TARGET / STOPLOSS / EXPIRED)
+
 iii) ROI calculation
+
 iv) Scheduled background updates
+
 v) PostgreSQL persistence
+
 vi) Swagger API documentation
+
 vii) Full unit test coverage
 
 🚀 1. Setup Instructions
@@ -25,30 +31,41 @@ Git
 (Optional) Docker & Docker Compose
 
 ##Clone the Repository
-git clone https://github.com/your-username/trading-signals-backend.git
-cd trading-signals-backend
+
+git clone [https://github.com/your-username/trading-signals-backend](https://github.com/Jasmeet31dec/trading-signal).git
+
+cd trading-signal
 
 ##Install Dependencies
+
 mvn clean install
 
 ##Run the Application
+
 Option A — Using Maven
+
 mvn spring-boot:run
 
 Option B — Using IDE
+
 Run the main class:  com.example.trading.TradingApplication
 
 🗄️ 2. Database Setup (PostgreSQL)
+
 Create Database
+
 Login to PostgreSQL: psql -U postgres
+
 Create the database: CREATE DATABASE trading_signals_db;
 
 ##Configure Credentials
+
 Update src/main/resources/application.properties:
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/trading_signals_db
 spring.datasource.username=postgres
-spring.datasource.password=postgres
+spring.datasource.password=postgres{password}
+server.port=8081
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
@@ -56,12 +73,15 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
 
 ##Verify Connection
+
 psql -U postgres -d trading_signals_db
 
 📚 3. API Documentation
+
 Once the application is running, open:
 
 👉 Swagger UI
+
 http://localhost:8081/swagger-ui/index.html
 
 ##Available Endpoints
@@ -75,6 +95,7 @@ http://localhost:8081/swagger-ui/index.html
 
 
 🧠 4. Architecture Overview
+
 This project follows a clean, layered architecture:
 
 src/main/java/com/example/trading
@@ -90,6 +111,7 @@ src/main/java/com/example/trading
 └── exception         → Global exception handling
 
 🔄 Business Logic Flow
+
 1. Create Signal
 User submits signal details - 
 
